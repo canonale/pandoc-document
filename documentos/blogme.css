@@ -1,0 +1,29 @@
+.tabla-precios img  {
+    width: 150px;
+}
+
+.tabla-precios tr.header > th{
+    text-align: center !important;
+    font-size: 150%;
+}
+.tabla-precios td > strong {
+    font-size: 150%;
+}
+
+.pantallazo {
+    border: 1px solid #ccc;
+    box-shadow: 0px 1px 3px #ccc;
+    padding-top: 25px;
+    background-color: #F8F8F8;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADMAAAANBAMAAAD2/0vEAAAAMFBMVEX+XlfwYl42uVPsgX8jxkNXwW+AzpLwsa7+ui3zv1L104y44cH13dv34rv27dT2+fWJAJAgAAAACXBIWXMAAA3XAAAN1wFCKJt4AAAAB3RJTUUH4QIVDyMDIDf3rAAAANtJREFUGNNd0L0OAUEQAOC5eIETrUIuotFQaSSSyz6ASqNRUIt4AO0q0KKg1iAi2osnuNYjoNoQcf4yZmfPCVvN7pfZ+QF85uNF5DOTYxPgpuKhAswDWB19P0gpJyyXtHA8BWcbAJL6YUgkmdJCiKyCLQlYdL9rkVOdRCJcBTkmHzFgGhCtNIka2ExUbM/UJ1ozlQ1BCXHH1COqM6W+WUGU9aGo1u2vVtl0GKOHF9OCohN3uITrz1xdHTz0XBnaRsuGhI/hYAsemX50m0TPdsE3mzuO5uEOG04V1RtcMMJ+oassPgAAAABJRU5ErkJggg==);
+    background-repeat: no-repeat;
+    background-position: 8px 5px;
+}
+
+p > img.pantallazo {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+}
