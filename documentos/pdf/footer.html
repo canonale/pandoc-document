@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <style type="text/css">
+        footer{
+            height: 2.6cm;
+            width: 100%;
+            background-color: #0bf;
+            color: #fff;
+            padding: 0.5cm;
+            box-sizing: border-box;
+            display: block;
+            bottom: 0;
+        }
+        footer .numpag p{
+            font-size: 16pt;
+            float: left;
+        }
+        .texto-footer{
+            /*float: right;*/
+            text-align: right;
+        }
+
+        table {
+            width: 100%;
+        }
+        .width25 {
+            width: 25%;
+        }
+        .width75 {
+            width: 75%;
+        }
+    </style>
+    <script>
+        function subst() {
+            var vars={};
+            var x=window.location.search.substring(1).split('&');
+            for (var i in x) {var z=x[i].split('=',2);vars[z[0]] = unescape(z[1]);}
+            var x=['frompage','topage','page','webpage','section','subsection','subsubsection'];
+            for (var i in x) {
+                var y = document.getElementsByClassName(x[i]);
+                for (var j=0; j<y.length; ++j) y[j].textContent = vars[x[i]];
+            }
+        }
+    </script>
+</head>
+<body onload="subst()">
+<footer>
+    <table>
+        <tr>
+            <td class="width25">
+                <div class="numpag">
+                    <p>Pág <span class="page"></span></p>
+                </div>
+            </td>
+            <td class="width75">
+                <div class="texto-footer"><p>Transformación Digital en {{ company }}</p></div>
+            </td>
+        </tr>
+    </table>
+    <!--
+    <div class="numpag">
+        <p>Pág <span class="page"></span></p>
+    </div>
+    <div class="texto-footer"><p>Transformación Digital en {{ company }}</p></div>
+    -->
+</footer>
+</body>
+</html>

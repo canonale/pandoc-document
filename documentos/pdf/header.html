@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <style type="text/css">
+        body{
+            font-family: 'Roboto Condensed', sans-serif;
+            font-family: Arial, sans-serif;
+        }
+        p{
+            font-weight: 100;
+        }
+        .bg-blue-cosmo{
+            background-color: #559;
+
+        }
+        * {
+            -webkit-print-color-adjust: exact;
+            print-color-adjust: exact;
+        }
+        @page{
+            size: A4;
+            margin: 0.8cm;
+        }
+
+
+
+        h1, h2, h3, h4, h5 {
+            font-weight: bold;
+            page-break-after: avoid;
+            page-break-inside:avoid;
+        }
+
+        h1+p, h2+p, h3+p {
+            page-break-before: avoid;
+        }
+
+        table, figure {
+            page-break-inside: avoid;
+        }
+
+
+        header{
+            height: 2.6cm;
+            width: 100%;
+            background-color: #559;
+            color: #fff;
+            padding: 0.5cm;
+            box-sizing: border-box;
+            display: block;
+            top: 0;
+        }
+
+        .logocosmo, .numpag{
+            float: left;
+        }
+        .logocosmo > img{
+            width: 3.198cm;
+        }
+        .texto-header {
+            float: right;
+        }
+        .texto-header p{
+            font-size: 20pt;
+            font-weight: bold;
+            margin-top: 0.5cm;
+        }
+
+
+
+        .content{
+            margin-top: 2.6cm;
+        }
+        .page{
+            padding: 1cm 0;
+            page-break-after: always;
+        }
+        .row{
+            display: block;
+            page-break-inside: avoid;
+            margin: 0.5cm 0;
+        }
+        .rojo{ color: #d00; }
+        .amarillo { color: #da0; }
+        .verde{ color: #390; }
+        .sidenote {
+            float: left;
+            clear: left;
+            margin: 1em;
+            width: 6cm;
+            font-style: normal;
+            text-indent: 0;
+            text-align: right;
+            page-break-inside: avoid;
+        }
+        .sidenote figure, .sidenote p{
+            text-align: center;
+            margin: 0 0.25cm;
+        }
+
+        p.nota{
+            font-size: 50pt;
+            font-weight: bold;
+        }
+        p.resumen{
+            font-size: 20pt;
+        }
+
+        .informe {
+            margin-left: 7cm;
+            width: 11cm;
+        }
+        .informe h1{
+            color: #559;
+            font-size: 30pt;
+        }
+        .informe p{
+            color: #4b4b4b;
+            font-size: 13pt;
+            text-align: justify;
+        }
+
+    </style>
+</head>
+<body>
+<header>
+    <div class="logocosmo">
+        <a href="http://www.cosmomedia.es"><img src="{{ parameters.BASE_DIR }}/encuestas/static/img/reports/logocosmo.svg" alt="Logo Cosmo"></a>
+    </div>
+    <div class="texto-header"><p>Estudio CosmoDigiT</p></div>
+</header>
+</body>
+</html>
